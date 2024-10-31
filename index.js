@@ -39,7 +39,8 @@ app.get("/", async (req,res) => {
     })
     .catch(error => {
       // If any request fails, handle the error here
-      console.error('An error occurred:', error);
+      res.render('index.ejs')
+      // console.error('An error occurred:', error);
   });
   
 });
